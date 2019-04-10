@@ -1,3 +1,28 @@
+output/*.json
+output/*.yml
+
+*.swp
+
+tmp
+todo
+
+config/version.yml
+local_config/*.yml
+
+vendor/links
+vendor/git
+
+raw-imports/*.yml
+raw-imports/*.json
+
+## from generated
+
+*.js
+*.d.ts
+node_modules
+
+## from github
+
 # Logs
 logs
 *.log
