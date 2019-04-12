@@ -13,3 +13,6 @@ export class HelloCdkStack extends cdk.Stack {
     });
   }
 }
+
+const app = new cdk.App();
+new HelloCdkStack(app, 'HelloCdkStack');
