@@ -5,8 +5,9 @@ import configurator = require('../lib/configurator');
 export class HelloCdkStack extends cdk.Stack {
   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-    console.log(__dirname);
-    new configurator.Config();
+
+    // let a :string = 'hi';
+    new configurator.Config({cwd: process.cwd()});
 
     new s3.Bucket(this, 'MyFirstBucket', {
       versioned: true
